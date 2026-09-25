@@ -173,7 +173,7 @@ const styles = StyleSheet.create({
 * Иконки: Импортируйте Ionicons из библиотеки @expo/vector-icons.
 * Привязка к экранам: Добавьте свойство tabBarIcon для маршрутов index и about. Функция принимает параметры { focused, color } и возвращает компонент иконки с нужным именем (name).
 * Цвет активности: В свойстве screenOptions компонента <Tabs> задайте tabBarActiveTintColor: '#ffd33d'. Это окрасит активную иконку и текст в желтый цвет.
-#### Создание экрана
+### Создание экрана
 
 **Базовые UI-компоненты:**
 *View* — контейнер-блок (аналог *div* в веб-разработке).
@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
 
 **Стилизация:** Используется встроенный *StyleSheet.create()*. Стили основаны на модели **Flexbox**, где направление по умолчанию выставлено как *flexDirection:* *'column'* (вертикально).
 
-## 5. Use an image picker (Использование Image Picker)
+### 5. Использование Image Picker
 
 **Библиотека:** *expo-image-picker*.
 
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
 
 **Выбор фото:** Метод *launchImageLibraryAsync()* открывает системную галерею и возвращает объект с URI выбранного изображения для последующего отображения в компоненте *Image*.
 
-#### Create a modal 
+### Create a modal 
 
 **Компонент *Modal*:** Стандартный компонент React Native для всплывающих окон поверх основного интерфейса.
 
@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
 
 **Свойства:** Атрибут *animationType="slide"* задает анимацию появления снизу, а *transparent={true}* позволяет делать полупрозрачный размытый или затемненный фон.
 
-#### Добавление жестов
+### Добавление жестов
 
 **Инструментарий:** *react-native-gesture-handler* и *react-native-reanimated*.
 
@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
 
 **Реализация:** Компоненты вроде *PanGestureHandler* (для перетаскивания) или *TapGestureHandler* (для тапов) отслеживают координаты пальца, а Reanimated плавно обновляет положение объекта в обход основного потока JavaScript.
 
-#### Создание скриншота
+### Создание скриншота
 
 **Библиотека:** *react-native-view-shot*.
 
@@ -214,13 +214,13 @@ const styles = StyleSheet.create({
 
 **Сохранение в галерею:** Полученный URI передается в модуль *expo-media-library* с помощью функции *MediaLibrary.saveToLibraryAsync(localUri)*.
 
-## 9. Handle platform differences (Обработка межплатформенных различий)
+### 9. Обработка межплатформенных различий
 
 **Модуль** *Platform:* Позволяет писать разветвления в коде в зависимости от ОС: *typescriptconst padding = Platform.OS === 'ios' ? 20 : 10;*
 
 **Расширения файлов:** Metro автоматически выберет нужный файл, если дать ему специфичное расширение: *Button.ios.tsx*, *Button.android.tsx* или *Button.web.tsx.*
 
-## 10. Configure status bar, splash screen and app icon (Настройка системных элементов)
+### 10. Настройка системных элементов
 
 **Status Bar:** Компонент *StatusBar style="light" /* управляет цветом системных иконок (время, батарея) в верхней части экрана.
 
@@ -229,7 +229,7 @@ const styles = StyleSheet.create({
 *splash* — параметры экрана загрузки (фоновый цвет и логотип).
 *adaptiveIcon* — специфические настройки адаптивных иконок для Android.
 
-## 11. Learning resources (Ресурсы для обучения)
+### 11. Ресурсы для обучения
 
 **Дальнейшие шаги:**
 Изучение **EAS (Expo Application Services)** для облачной сборки бинарников (*.apk*, *.aab*, *.ipa*) без наличия macOS.
