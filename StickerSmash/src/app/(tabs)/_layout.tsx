@@ -19,6 +19,13 @@ export default function TabLayout() {
           md="info"
         />
       </NativeTabs.Trigger>
-    </NativeTabs>
+    <NativeTabs.Trigger name="clock">
+    <NativeTabs.Trigger.Label>Clock</NativeTabs.Trigger.Label>
+    <NativeTabs.Trigger.Icon
+      sf={{ default: 'clock', selected: 'clock.fill' }}
+      md="schedule"
+    />
+  </NativeTabs.Trigger>
+</NativeTabs>
   );
 }
